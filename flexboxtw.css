@@ -1,0 +1,57 @@
+*{
+    margin:0;
+}
+header{
+    grid-area: header;
+    background-color:green  
+}
+
+section{
+    git-area: section;
+    border-color:navy; 
+}
+aside{
+    grid-area:aside;
+    background-color:yellowgreen; 
+}
+footer{
+    grid-area: footer;
+    background-color:lightcoral; 
+}
+.left-top{
+    grid-area: left-top;
+    background-color:gray  
+}
+.right-top{
+    grid-area: right-top;
+    background-color:peru; 
+}
+.left-bottom{
+    grid-area:left-bottom;
+    background-color:aqua;
+}
+.right-bottom{
+    grid-area: right-bottom;
+    background-color: orangered 
+}
+.top{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, minmax(125px, auto));
+    grid-template-areas: 
+    "header header header header header"
+    "section section section aside aside"
+    "section section section aside aside"
+    "section section section aside aside"
+    "footer footer footer footer footer"
+}
+.section-grid{
+    display: grid;
+    margin: 10px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(200px, auto));
+    grid-template-areas: 
+    "left-top right-top"
+    "left-bottom right-bottom"
+}
